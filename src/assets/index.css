@@ -587,6 +587,10 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -599,13 +603,131 @@ video {
   left: 0px;
 }
 
+.right-0{
+  right: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.top-40{
+  top: 10rem;
+}
+
+.-top-40{
+  top: -10rem;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.bottom-10{
+  bottom: 2.5rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-8{
+  top: 2rem;
+}
+
+.top-80{
+  top: 20rem;
+}
+
+.top-12{
+  top: 3rem;
+}
+
+.top-14{
+  top: 3.5rem;
+}
+
+.right-1{
+  right: 0.25rem;
+}
+
+.right-20{
+  right: 5rem;
+}
+
+.-right-2{
+  right: -0.5rem;
+}
+
+.-right-4{
+  right: -1rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
+.right-2{
+  right: 0.5rem;
+}
+
+.right-1\/2{
+  right: 50%;
+}
+
+.right-full{
+  right: 100%;
+}
+
+.-top-0{
+  top: -0px;
+}
+
+.-top-1{
+  top: -0.25rem;
+}
+
+.-top-2{
+  top: -0.5rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.top-16{
+  top: 4rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -620,12 +742,72 @@ video {
   height: 1.5rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-screen{
   width: 100vw;
 }
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-1\/4{
+  width: 25%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-60{
+  width: 15rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[100\]{
+  width: 100;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -694,8 +876,36 @@ video {
   margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .rounded-t-none{
@@ -710,6 +920,16 @@ video {
 .bg-slate-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .p-6{
@@ -728,6 +948,10 @@ video {
   padding: 1rem;
 }
 
+.p-7{
+  padding: 1.75rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -741,6 +965,62 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-96{
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.px-40{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.px-60{
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.px-56{
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
+}
+
+.pl-24{
+  padding-left: 6rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-serif{
@@ -778,6 +1058,10 @@ video {
   font-weight: 400;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .text-slate-200{
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
@@ -793,6 +1077,55 @@ video {
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-10{
+  opacity: 0.1;
+}
+
+.opacity-90{
+  opacity: 0.9;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150{
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media (min-width: 480px){
   .sm\:block{
     display: block;
@@ -802,6 +1135,14 @@ video {
 @media (min-width: 768px){
   .md\:block{
     display: block;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
+  }
+
+  .md\:inline{
+    display: inline;
   }
 
   .md\:flex{
