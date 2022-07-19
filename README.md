@@ -1,4 +1,4 @@
-# vue-project
+# vue-project + tailwindcss + postcss + autoprefixer
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -9,6 +9,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
+See tailwindcss, postcss and autoprefixer
 
 ## Project Setup
 
