@@ -1,11 +1,12 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-screen mx-auto p-4 bg-slate-800 text-slate-200"
+    id="navbar"
+    class="fixed top-0 left-0 w-screen mx-auto p-4 bg-slate-800 text-slate-200 z-20"
   >
     <div class="container">
       <!-- Navbar Items -->
       <div
-        class="flex items-center justify-between md:justify-around px-2 md:px-0"
+        class="flex items-center justify-between md:justify-between lg:justify-around px-6"
       >
         <!-- Logo -->
         <div class="text-5xl font-serif">
@@ -29,14 +30,14 @@
           @click="isToggled = !isToggled"
           class="block relative md:hidden"
         >
-          <div v-if="isToggled === false"><HamburgerIcon /></div>
+          <div v-if="!isToggled"><HamburgerIcon /></div>
           <div v-else><CloseIcon /></div>
         </button>
       </div>
     </div>
     <div
-      v-if="isToggled === true"
-      class="block absolute index-10 w-screen h-screen bg-slate-800 top-20 right-0 md:hidden"
+      :class="isToggled ? 'opacity-100' : 'opacity-0'"
+      class="block absolute index-10 w-screen h-screen bg-slate-800 top-20 right-0 transition-opacity md:hidden"
     >
       <div class="flex flex-col pt-8 space-y-8 justify-end items-center">
         <a href="">About</a>
