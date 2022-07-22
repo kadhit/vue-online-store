@@ -36,10 +36,10 @@
       </div>
     </div>
     <div
-      :class="isToggled ? 'opacity-100' : 'opacity-0'"
-      class="block absolute index-10 w-screen h-screen bg-slate-800 top-20 right-0 transition-opacity md:hidden"
+      :class="!isToggled ? '-translate-y-full' : 'translate-y-0'"
+      class="block absolute -z-10 w-screen h-screen bg-slate-800 top-20 right-0 transition-transform duration-1000 md:hidden"
     >
-      <div class="flex flex-col pt-8 space-y-8 justify-end items-center">
+      <div class="flex flex-col -z-10 pt-8 space-y-8 justify-end items-center">
         <a href="">About</a>
         <a href="">Our Products</a>
         <a href="">Contact</a>

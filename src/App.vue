@@ -3,6 +3,8 @@
     <HeaderComponent />
     <HeroComponent />
     <VisionMission />
+    <ProductComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import HeroComponent from "./components/HeroComponent.vue";
 import VisionMission from "./components/VisionMission.vue";
+import ProductComponent from "./components/ProductComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
@@ -17,9 +21,11 @@ export default {
     HeaderComponent,
     HeroComponent,
     VisionMission,
+    ProductComponent,
+    FooterComponent,
   },
-  mounted() {
-    const observer = new IntersectionObserver();
-  },
+  setup() {
+
+  }
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
   <section class="bg-slate-200">
     <div
-      class="container flex mx-auto w-screen min-h-screen justify-center items-center"
+      class="container flex mx-auto p-6 w-screen min-h-screen justify-evenly items-center"
     >
-      <div class="flex-col text-center w-9/12 md:w-1/3">
+      <div class="flex-col text-center w-4/5 xl:w-1/3">
         <h1 class="font-serif font-bold text-5xl">Vision</h1>
         <hr />
         <blockquote class="relative font-sans pt-10">
@@ -25,8 +25,10 @@
           tenetur eaque suscipit, cum est ratione!
         </blockquote>
       </div>
+      <div
+        class="hidden xl:block bg-emerald-400 w-1/4 py-96 rounded-full"
+      ></div>
     </div>
-    <div class="container"></div>
   </section>
 </template>
 
