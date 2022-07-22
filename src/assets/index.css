@@ -702,9 +702,19 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-50{
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scroll-py-80{
   scroll-padding-top: 20rem;
   scroll-padding-bottom: 20rem;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -753,6 +763,14 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .bg-slate-100{
@@ -837,8 +855,24 @@ video {
   --tw-gradient-to: #34d399;
 }
 
+.bg-auto{
+  background-size: auto;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-clip-border{
   background-clip: border-box;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-right{
+  background-position: right;
 }
 
 .p-4{
@@ -851,6 +885,10 @@ video {
 
 .p-96{
   padding: 24rem;
+}
+
+.p-20{
+  padding: 5rem;
 }
 
 .py-20{
@@ -949,6 +987,18 @@ video {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
+.shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1015,6 +1065,10 @@ video {
 @media (min-width: 1440px){
   .xl\:block{
     display: block;
+  }
+
+  .xl\:flex{
+    display: flex;
   }
 
   .xl\:w-4\/12{

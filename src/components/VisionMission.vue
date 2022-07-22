@@ -1,7 +1,7 @@
 <template>
   <section class="bg-slate-200">
     <div
-      class="container flex mx-auto p-6 w-screen min-h-screen justify-evenly items-center"
+      class="container flex mx-auto p-20 w-screen min-h-screen justify-evenly items-center"
     >
       <div class="flex-col text-center w-4/5 xl:w-1/3">
         <h1 class="font-serif font-bold text-5xl">Vision</h1>
@@ -26,7 +26,10 @@
         </blockquote>
       </div>
       <div
-        class="hidden xl:block bg-emerald-400 w-1/4 py-96 rounded-full"
+        class="hidden xl:flex w-1/4 py-80 rounded-full bg-center bg-cover"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1617693322135-13831d116f79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDM1MDB8MHwxfGFsbHwyOTJ8fHx8fHwyfHwxNjU4NDkyMTYz&ixlib=rb-1.2.1&q=80&w=1080');
+        "
       ></div>
     </div>
   </section>
