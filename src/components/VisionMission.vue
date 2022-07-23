@@ -26,7 +26,7 @@
         </blockquote>
       </div>
       <div
-        class="hidden xl:flex w-1/4 py-80 rounded-full bg-center bg-cover"
+        class="hidden xl:block w-1/4 py-80 rounded-full bg-center bg-cover"
         style="
           background-image: url('https://images.unsplash.com/photo-1617693322135-13831d116f79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDM1MDB8MHwxfGFsbHwyOTJ8fHx8fHwyfHwxNjU4NDkyMTYz&ixlib=rb-1.2.1&q=80&w=1080');
         "

@@ -24,8 +24,5 @@ export default {
     ProductComponent,
     FooterComponent,
   },
-  setup() {
-
-  }
 };
 </script>

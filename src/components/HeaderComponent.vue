@@ -1,7 +1,8 @@
 <template>
   <nav
     id="navbar"
-    class="fixed top-0 left-0 w-screen mx-auto p-4 bg-slate-800 text-slate-200 z-20"
+    :class="navBarColor"
+    class="fixed top-0 left-0 w-screen mx-auto p-4 z-20 ease-in-out"
   >
     <div class="container">
       <!-- Navbar Items -->
@@ -10,7 +11,7 @@
       >
         <!-- Logo -->
         <div class="text-5xl font-serif">
-          <h1 class="font-light">hi<span class="font-bold">there.</span></h1>
+          <h1 class="font-light">hi<span class="font-bold">feey.</span></h1>
         </div>
         <div class="flex items-center justify-end space-x-12">
           <!-- Menu Items -->
@@ -22,7 +23,7 @@
           <!-- Shop now Button -->
           <a
             href=""
-            class="hidden md:inline py-3 px-6 bg-emerald-400 text-white font-semibold rounded-full"
+            class="hidden md:inline py-3 px-6 bg-emerald-500 text-white font-semibold rounded-full"
             >Shop now</a
           >
         </div>
@@ -36,10 +37,13 @@
       </div>
     </div>
     <div
-      :class="!isToggled ? '-translate-y-full' : 'translate-y-0'"
-      class="block absolute -z-10 w-screen h-screen bg-slate-800 top-20 right-0 transition-transform duration-1000 md:hidden"
+      :class="[!isToggled ? '-translate-y-full' : 'translate-y-0', navBarColor]"
+      class="block absolute -z-10 w-screen h-screen top-20 right-0 md:hidden"
     >
-      <div class="flex flex-col -z-10 pt-8 space-y-8 justify-end items-center">
+      <div
+        :class="navBarMobileFont"
+        class="flex flex-col -z-10 pt-8 space-y-8 justify-end items-center"
+      >
         <a href="">About</a>
         <a href="">Our Products</a>
         <a href="">Contact</a>
@@ -66,7 +70,30 @@ export default {
   data() {
     return {
       isToggled: false,
+      scrollPosition: null,
+      viewportHeight: null,
     };
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+  },
+  computed: {
+    navBarColor() {
+      return this.scrollPosition > this.viewportHeight * 0.9
+        ? "bg-slate-800 text-slate-200 transition-all duration-500 ease-in-out"
+        : "bg-transparent text-slate-800 transition-all duration-500 ease-in-out";
+    },
+    navBarMobileFont() {
+      return this.scrollPosition > this.viewportHeight * 0.9
+        ? ""
+        : "font-semibold";
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
+    this.viewportHeight = window.innerHeight;
   },
 };
 </script>
