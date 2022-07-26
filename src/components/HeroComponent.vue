@@ -28,5 +28,10 @@
 <script>
 export default {
   name: "HeroComponent",
+  props: {
+    imgUrl: String,
+    heading: String,
+    subheading: String,
+  },
 };
 </script>

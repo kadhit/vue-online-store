@@ -36,6 +36,7 @@
         </button>
       </div>
     </div>
+    <!-- Responsive -->
     <div
       :class="[!isToggled ? '-translate-y-full' : 'translate-y-0', navBarColor]"
       class="block absolute -z-10 w-screen h-screen top-20 right-0 md:hidden"

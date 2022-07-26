@@ -1,11 +1,10 @@
 <template>
-  <section class="bg-slate-200">
+  <section>
     <div
-      class="container flex mx-auto p-20 w-screen min-h-screen justify-evenly items-center"
+      class="container flex mx-auto p-20 xl:pb-20 w-screen min-h-screen justify-evenly items-center"
     >
       <div class="flex-col text-center w-4/5 xl:w-1/3">
         <h1 class="font-serif font-bold text-5xl">Vision</h1>
-        <hr />
         <blockquote class="relative font-sans pt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
           inventore atque omnis, dolorem labore praesentium dolorum? Facere
@@ -15,7 +14,6 @@
           tenetur eaque suscipit, cum est ratione!
         </blockquote>
         <h1 class="font-serif md:pt-20 font-bold text-5xl pt-10">Mission</h1>
-        <hr />
         <blockquote class="relative font-sans pt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
           inventore atque omnis, dolorem labore praesentium dolorum? Facere

@@ -1,9 +1,15 @@
 <template>
-  <div class="bg-slate-100">
+  <div>
     <HeaderComponent />
     <HeroComponent />
-    <VisionMission />
-    <ProductComponent />
+    <div>
+      <div class="hidden xl:block sticky top-24 left-40">
+        <SidebarComponent />
+      </div>
+      <VisionMission />
+      <ProductComponent />
+      <TestimonialComponent />
+    </div>
     <FooterComponent />
   </div>
 </template>
@@ -14,6 +20,8 @@ import HeroComponent from "./components/HeroComponent.vue";
 import VisionMission from "./components/VisionMission.vue";
 import ProductComponent from "./components/ProductComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import SidebarComponent from "./components/SidebarComponent.vue";
+import TestimonialComponent from "./components/TestimonialComponent.vue";
 
 export default {
   name: "App",
@@ -23,6 +31,8 @@ export default {
     VisionMission,
     ProductComponent,
     FooterComponent,
+    SidebarComponent,
+    TestimonialComponent,
   },
 };
 </script>
