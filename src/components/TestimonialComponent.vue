@@ -1,9 +1,13 @@
 <template>
-  <section class="bg-slate-200">
-    <div class="container mx-auto p-20 w-screen min-h-screen">
-      <div class="flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-serif font-bold pb-16">Testimonials</h1>
-        <div class="flex flex-row flex-wrap mx-auto justify-center">
+  <section class="bg-slate-50">
+    <div
+      class="container flex mx-auto p-20 w-screen min-h-screen justify-center items-center"
+    >
+      <div class="flex flex-col">
+        <h1 class="text-5xl text-center font-serif font-bold pb-16">
+          Testimonials
+        </h1>
+        <div class="flex flex-row flex-wrap justify-center">
           <div v-for="(testimonial, $index) in testimonials" :key="$index">
             <TestimonialCard
               :name="testimonial.name"

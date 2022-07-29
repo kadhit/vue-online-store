@@ -1,38 +1,39 @@
 <template>
-  <div>
-    <HeaderComponent />
-    <HeroComponent />
-    <div>
-      <div class="hidden xl:block sticky top-24 left-40">
-        <SidebarComponent />
-      </div>
-      <VisionMission />
-      <ProductComponent />
-      <TestimonialComponent />
-    </div>
-    <FooterComponent />
+  <HeaderComponent />
+  <LoadingComponent width="100" height="100" borderWidth="8" v-if="isLoading" />
+  <div v-else>
+    <router-view />
   </div>
+  <FooterComponent />
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
-import HeroComponent from "./components/HeroComponent.vue";
-import VisionMission from "./components/VisionMission.vue";
-import ProductComponent from "./components/ProductComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
-import SidebarComponent from "./components/SidebarComponent.vue";
-import TestimonialComponent from "./components/TestimonialComponent.vue";
+import LoadingComponent from "./components/LoadingComponent.vue";
+
+import router from "./router";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
-    HeroComponent,
-    VisionMission,
-    ProductComponent,
     FooterComponent,
-    SidebarComponent,
-    TestimonialComponent,
+    LoadingComponent,
+  },
+  data() {
+    return {
+      isLoading: false,
+    };
+  },
+  mounted() {
+    router.beforeEach(() => {
+      this.isLoading = true;
+    });
+
+    router.afterEach(() => {
+      this.isLoading = false;
+    });
   },
 };
 </script>

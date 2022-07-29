@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section id="our-products" class="bg-white">
     <div class="md:container mx-auto p-20 w-screen min-h-screen">
       <div class="flex flex-col justify-center items-center">
         <h1 class="font-serif font-bold text-5xl pb-16">Our Products</h1>

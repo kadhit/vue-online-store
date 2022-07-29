@@ -1,25 +1,13 @@
 <template>
-  <section
-    id="hero"
-    class="bg-top bg-no-repeat"
-    style="
-      background-postion: top;
-      background-image: url('https://images.unsplash.com/photo-1596536557923-4d4bd6294f79?ixid=MnwzNDM1MDB8MHwxfGFsbHwzMHx8fHx8fDJ8fDE2NTg1MDE0NDc&ixlib=rb-1.2.1');
-    "
-  >
+  <section id="hero" class="relative h-screen max-w-screen" :style="cssProps">
     <div
       class="container flex flex-col text-center h-screen w-screen items-center justify-center mx-auto px-6 md:w-3/4 lg:w-6/12 xl:w-4/12"
     >
       <h1 class="py-6 font-serif font-bold text-7xl xl:text-8xl w-full">
-        Bring nature into your home.
+        {{ heading }}
       </h1>
       <h2 class="py-6 font-sans font-normal text-base md:text-xl w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis
-        quibusdam inventore, cupiditate sequi eum qui quod distinctio dolores
-        sapiente delectus officia corporis voluptates nihil nam, voluptatibus
-        debitis nulla ea ipsa! Praesentium reiciendis vero odio amet, qui unde
-        rem eaque asperiores quia alias deserunt ab distinctio magni nesciunt
-        nostrum culpa?
+        {{ subheading }}
       </h2>
     </div>
   </section>
@@ -30,8 +18,36 @@ export default {
   name: "HeroComponent",
   props: {
     imgUrl: String,
+    opacity: String,
+    backgroundPosition: String,
     heading: String,
     subheading: String,
   },
+  computed: {
+    cssProps() {
+      return {
+        "--bg-opacity": this.opacity,
+        "--bg-position": this.backgroundPosition,
+        "--bg-url": `url(${this.imgUrl})`,
+      };
+    },
+  },
 };
 </script>
+
+<style scoped>
+#hero::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  opacity: var(--bg-opacity);
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: var(--bg-position);
+  background-size: auto;
+}
+</style>

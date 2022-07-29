@@ -11,7 +11,9 @@
       >
         <!-- Logo -->
         <div class="text-5xl font-serif">
-          <h1 class="font-light">hi<span class="font-bold">feey.</span></h1>
+          <router-link :to="{ name: 'Home' }">
+            <h1 class="font-light">hi<span class="font-bold">feey.</span></h1>
+          </router-link>
         </div>
         <div class="flex items-center justify-end space-x-12">
           <!-- Menu Items -->
@@ -21,11 +23,12 @@
             <a href="">Contact</a>
           </div>
           <!-- Shop now Button -->
-          <a
-            href=""
+          <router-link
+            :to="{ name: 'Shop' }"
             class="hidden md:inline py-3 px-6 bg-emerald-500 text-white font-semibold rounded-full"
-            >Shop now</a
           >
+            Shop now
+          </router-link>
         </div>
         <button
           @click="isToggled = !isToggled"

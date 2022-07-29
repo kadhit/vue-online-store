@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <section id="vision-mission">
     <div
-      class="container flex mx-auto p-20 xl:pb-20 w-screen min-h-screen justify-evenly items-center"
+      class="container flex mx-auto w-screen min-h-screen justify-evenly items-center xl:items-start"
     >
-      <div class="flex-col text-center w-4/5 xl:w-1/3">
+      <div class="flex-col text-center w-4/5 lg:w-3/5 xl:pt-5 xl:w-1/3">
         <h1 class="font-serif font-bold text-5xl">Vision</h1>
         <blockquote class="relative font-sans pt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
