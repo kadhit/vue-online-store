@@ -12,6 +12,7 @@
     </div>
     <VisionMission />
     <TestimonialComponent />
+    <ServicesComponent />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import HeroComponent from "../components/HeroComponent.vue";
 import SidebarComponent from "../components/SidebarComponent.vue";
 import VisionMission from "../components/VisionMission.vue";
 import TestimonialComponent from "../components/TestimonialComponent.vue";
+import ServicesComponent from "../components/ServicesComponent.vue";
 
 export default {
   name: "HomeView",
@@ -28,6 +30,7 @@ export default {
     SidebarComponent,
     VisionMission,
     TestimonialComponent,
+    ServicesComponent,
   },
   data() {
     return {

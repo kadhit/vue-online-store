@@ -1,17 +1,17 @@
 <template>
-  <section id="testimonials" class="bg-slate-50">
+  <section id="our-services">
     <div
       class="container flex mx-auto p-20 w-screen min-h-screen justify-center items-center"
     >
       <div class="flex flex-col">
         <h1 class="text-5xl text-center font-serif font-bold pb-16">
-          Testimonials
+          Our Services
         </h1>
         <div class="flex flex-row flex-wrap justify-center">
-          <div v-for="(testimonial, $index) in testimonials" :key="$index">
-            <TestimonialCard
-              :name="testimonial.name"
-              :testimonial="testimonial.comment"
+          <div v-for="(service, $index) in services" :key="$index">
+            <ServicesCard
+              :name="service.name"
+              :description="service.description"
             />
           </div>
         </div>
@@ -21,34 +21,34 @@
 </template>
 
 <script>
-import TestimonialCard from "./cards/TestimonialCard.vue";
+import ServicesCard from "./cards/ServicesCard.vue";
 
 export default {
-  name: "TestimonialComponent",
+  name: "ServicesComponent",
   components: {
-    TestimonialCard,
+    ServicesCard,
   },
   data() {
     return {
-      testimonials: [
+      services: [
         {
           name: "lorem ipsum",
-          comment:
+          description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam velit! Sit laboriosam eveniet, ratione in sint sed fuga? Illum delectus itaque fugit! Commodi sapiente quae beatae ipsum animi ratione.",
         },
         {
           name: "lorem ipsum",
-          comment:
+          description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam velit! Sit laboriosam eveniet, ratione in sint sed fuga? Illum delectus itaque fugit! Commodi sapiente quae beatae ipsum animi ratione.",
         },
         {
           name: "lorem ipsum",
-          comment:
+          description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam velit! Sit laboriosam eveniet, ratione in sint sed fuga? Illum delectus itaque fugit! Commodi sapiente quae beatae ipsum animi ratione.",
         },
         {
           name: "lorem ipsum",
-          comment:
+          description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam velit! Sit laboriosam eveniet, ratione in sint sed fuga? Illum delectus itaque fugit! Commodi sapiente quae beatae ipsum animi ratione.",
         },
       ],

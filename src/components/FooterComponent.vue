@@ -1,15 +1,6 @@
 <template>
-  <footer id="footer" class="bg-slate-800">
-    <div
-      class="container flex flex-col mx-auto w-screen min-h-screen pt-20 pb-5 justify-between items-center space-y-5 text-white font-sans text-center"
-    >
-      <div>
-        <h1 class="font-serif text-5xl font-bold">Got questions?</h1>
-        <br /><br />
-        <h4 class="text-xl">Contact us</h4>
-      </div>
-      <p class="text-sm">Copyright &copy; 2022</p>
-    </div>
+  <footer id="footer" class="bg-slate-800 text-white font-sans text-center">
+    <p class="text-sm py-5">Copyright &copy; 2022</p>
   </footer>
 </template>
 
