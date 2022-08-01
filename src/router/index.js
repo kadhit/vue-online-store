@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -15,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/vue-online-store/"),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
