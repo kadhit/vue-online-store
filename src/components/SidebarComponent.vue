@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       menuItems: [
-        { name: "Vision", id: "#vision" },
-        { name: "Mission", id: "#mission" },
+        { name: "About Us", id: "#about-us" },
+        { name: "Vision & Mission", id: "#vision-mission" },
         { name: "Testimonials", id: "#testimonials" },
         { name: "Our Services", id: "#our-services" },
       ],

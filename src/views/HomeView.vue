@@ -10,6 +10,7 @@
     <div class="hidden xl:block sticky top-24">
       <SidebarComponent />
     </div>
+    <AboutUsComponent />
     <VisionMission />
     <TestimonialComponent />
     <ServicesComponent />
@@ -22,6 +23,7 @@ import SidebarComponent from "../components/SidebarComponent.vue";
 import VisionMission from "../components/VisionMission.vue";
 import TestimonialComponent from "../components/TestimonialComponent.vue";
 import ServicesComponent from "../components/ServicesComponent.vue";
+import AboutUsComponent from "../components/AboutUsComponent.vue";
 
 export default {
   name: "HomeView",
@@ -31,6 +33,7 @@ export default {
     VisionMission,
     TestimonialComponent,
     ServicesComponent,
+    AboutUsComponent,
   },
   data() {
     return {

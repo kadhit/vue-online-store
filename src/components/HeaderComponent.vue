@@ -18,7 +18,9 @@
         <div class="flex items-center justify-end space-x-12">
           <!-- Menu Items -->
           <div class="hidden md:flex space-x-12 font-sans font-normal text-md">
-            <router-link :to="{ name: 'Home' }">About</router-link>
+            <router-link :to="{ name: 'Home', hash: '#about-us' }"
+              >About</router-link
+            >
             <router-link :to="{ name: 'Shop', hash: '#our-products' }"
               >Our Products</router-link
             >
@@ -94,12 +96,12 @@ export default {
   },
   computed: {
     navBarColor() {
-      return this.scrollPosition > this.viewportHeight * 0.9
+      return this.scrollPosition > this.viewportHeight * 0.05
         ? "bg-slate-800 text-white transition-all duration-500 ease-in-out"
         : "bg-transparent text-black transition-all duration-500 ease-in-out";
     },
     navBarMobileFont() {
-      return this.scrollPosition > this.viewportHeight * 0.9
+      return this.scrollPosition > this.viewportHeight * 0.05
         ? ""
         : "font-semibold";
     },

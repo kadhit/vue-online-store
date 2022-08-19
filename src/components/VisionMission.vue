@@ -1,7 +1,7 @@
 <template>
-  <section id="vision-mission">
+  <section id="vision-mission" class="bg-slate-50">
     <div
-      class="container flex mx-auto w-screen min-h-screen justify-evenly items-center xl:items-start"
+      class="container flex mx-auto w-screen min-h-screen justify-evenly items-center"
     >
       <div class="flex-col text-center w-4/5 lg:w-3/5 xl:pt-5 xl:w-1/3">
         <h1 id="vision" class="font-serif font-bold text-5xl">Vision</h1>

@@ -1,5 +1,5 @@
 <template>
-  <section id="our-services">
+  <section id="our-services" class="bg-slate-50">
     <div
       class="container flex mx-auto p-20 w-screen min-h-screen justify-center items-center"
     >

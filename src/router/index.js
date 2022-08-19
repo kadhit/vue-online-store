@@ -22,10 +22,11 @@ const router = createRouter({
     if (to.hash) {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve({ el: to.hash, behavior: "smooth" });
-        }, 1500);
+          resolve({ el: to.hash, behavior: "smooth", top: 65 });
+        }, 1000);
       });
     }
+    return { top: 0 };
   },
 });
 
